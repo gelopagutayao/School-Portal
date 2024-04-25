@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        .background {
+            background-image: url('images/universitybg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* Style for clickable text */
+        .link-container {
+            margin-top: 20px;
+        }
+
+        .link-container a {
+            display: block;
+            margin-bottom: 10px;
+            color: white; /* Change text color to white */
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+
+        
+    </style>
+</head>
+
+<body>
+  <div class="flex min-h-full">
+    <!-- Left Pane -->
+    <div class="hidden lg:flex items-center justify-center flex-1 background" style="width: 40%;">
+        <div class="max-w-md text-center">
+            <div class="image-container">
+                <img src="images/universitybg.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Right Pane -->
+    <div class="w-full bg-sky-100 lg:w-1/2 flex items-center justify-center" style="width: 60%;">
+        <div class="bg-white rounded-md drop-shadow-lg max-w-md w-full p-6">
+            <h1 class="text-4xl font-bold mb-6 text-black text-center">School Portal</h1>
+            <h1 class="text-sm font-semibold mb-6 text-gray-500 text-center">Login to your Student Dashboard</h1>
+            <form class="space-y-4">
+                <!-- Email Input -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="text" id="email" name="email" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
+                </div>
+                <!-- Password Input -->
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="password" name="password" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
+                </div>
+                <!-- Sign Up Button -->
+                <div>
+                    <button type="submit" class="w-full bg-blue-700 text-white p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-300">Sign Up</button>
+                </div>
+            </form>
+            <!-- Already Have Account -->
+            <div class="mt-4 text-sm text-gray-600 text-center">
+                <p>Already have an account? <a href="#" class="text-black hover:underline">Login here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<footer>
+  <div class="w-full min-h-screen flex items-center justify-center bg-blue-200">
+    <div class="md:w-2/3 w-full px-4 text-black flex flex-col">
+        <div class="w-full text-7xl font-bold">
+            <h1 class="w-full md:w-2/3 text-black">Enroll is
+Ongoing</h1>
+        </div>
+        <div class="flex mt-8 flex-col md:flex-row md:justify-between">
+            <p class="w-full md:w-2/3 text-black-200">
+              "Discover, Innovate, Transform: Empowering Minds, Building Futures."</p> 
+            <div class="w-44 pt-6 md:pt-0">
+                <a href="#" class="text-white bg-blue-700 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">Contact US</a>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <div class="flex mt-24 mb-12 flex-row justify-between">
+                <div class="">
+                    
+                </div>
+                <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">About</a>
+                <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Services</a>
+                <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Why us</a>
+                <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Contact</a>
+                <div class="flex flex-row space-x-8 items-center justify-between">
+                
+                </div>
+            </div>
+            <hr class="border-gray-600"/>
+            <p class="w-full text-center my-12 text-gray-600">Copyright © 2024 Gelo</p>
+        </div>
+    </div>
+</div>
+</footer>
+
+</html>
